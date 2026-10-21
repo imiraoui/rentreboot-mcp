@@ -76,6 +76,7 @@ curl https://rentreboot.com/api/mcp \
 - [RentReboot apartment alerts](https://rentreboot.com)
 - [Authentication, scopes and limits](https://rentreboot.com/auth.md)
 - [Live MCP server card](https://rentreboot.com/.well-known/mcp/server-card.json)
+- [Official MCP Registry entry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.imiraoui%2Frentreboot/versions/latest), published as `io.github.imiraoui/rentreboot`
 - [AI discovery index](https://rentreboot.com/llms.txt)
 - [NYC neighborhood rent data](https://rentreboot.com/average)
 - [Renter guides](https://rentreboot.com/guide)

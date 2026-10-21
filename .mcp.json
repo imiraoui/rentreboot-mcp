@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "rentreboot": {
+      "type": "http",
+      "url": "https://rentreboot.com/api/mcp"
+    }
+  }
+}
