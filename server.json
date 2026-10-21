@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.imiraoui/rentreboot",
+  "title": "RentReboot Apartment Search",
+  "description": "NYC renter guides and rent data; OAuth tools for apartment alerts, saved searches and lottery status.",
+  "version": "1.2.0",
+  "websiteUrl": "https://rentreboot.com",
+  "repository": {
+    "url": "https://github.com/imiraoui/rentreboot-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://rentreboot.com/api/mcp"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+name: Publish MCP registry metadata
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v5
+      - name: Install official publisher
+        run: |
+          curl --fail --location --max-time 60 https://github.com/modelcontextprotocol/registry/releases/download/v1.8.1/mcp-publisher_linux_amd64.tar.gz -o "$RUNNER_TEMP/mcp-publisher.tar.gz"
+          tar xzf "$RUNNER_TEMP/mcp-publisher.tar.gz" -C "$RUNNER_TEMP" mcp-publisher
+      - name: Authenticate with GitHub OIDC
+        run: '"$RUNNER_TEMP/mcp-publisher" login github-oidc'
+      - name: Publish hosted-server metadata
+        run: '"$RUNNER_TEMP/mcp-publisher" publish'
