@@ -1,0 +1,17 @@
+{
+  "name": "rentreboot",
+  "version": "1.2.0",
+  "description": "Public NYC renter guides and rent data, with scoped OAuth tools for apartment alerts, saved searches, and Housing Lottery status.",
+  "author": {
+    "name": "RentReboot"
+  },
+  "homepage": "https://rentreboot.com",
+  "repository": "https://github.com/imiraoui/rentreboot-mcp",
+  "license": "MIT",
+  "keywords": [
+    "real-estate",
+    "apartment-search",
+    "rent-data"
+  ],
+  "mcpServers": ".mcp.json"
+}
