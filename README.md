@@ -84,3 +84,7 @@ curl https://rentreboot.com/api/mcp \
 - Support: support@rentreboot.com
 
 Tool descriptions above were checked against the public service on October 21, 2026. The live service and its authentication documentation are authoritative for current availability.
+
+## Cursor plugin
+
+This repository includes a Cursor plugin manifest at `.cursor-plugin/plugin.json`. It references the hosted RentReboot MCP configuration in `.mcp.json`; no local server process is started. Public guides and rent data work anonymously. Connect through browser OAuth for account tools, and confirm changes before approving write tools. The public plugin metadata is MIT licensed; the hosted implementation is not included.
