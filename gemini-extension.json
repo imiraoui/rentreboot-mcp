@@ -1,0 +1,10 @@
+{
+  "name": "rentreboot-mcp",
+  "version": "1.2.0",
+  "description": "NYC apartment search, renter guides, rent data, and scoped OAuth for personal renter tools. Website alert plans are separate.",
+  "mcpServers": {
+    "rentreboot": {
+      "httpUrl": "https://rentreboot.com/api/mcp"
+    }
+  }
+}
