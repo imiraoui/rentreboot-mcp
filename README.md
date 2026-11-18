@@ -46,7 +46,7 @@ Public tools are read-only and do not require an account or API key. Asking-rent
 | `find_search_neighborhoods` | Find valid neighborhood names for the renter's market. | `searches:read` |
 | `update_search_preferences` | Change the renter's budget, neighborhoods and other search preferences. | `preferences:write` |
 | `set_apartment_alerts` | Pause or resume apartment alerts. | `preferences:write` |
-| `list_upcoming_matches` | Read historical apartment records matching the renter's saved search. | `searches:read` |
+| `list_historical_matches` | Read historical apartment records matching the renter's saved search. | `searches:read` |
 | `list_housing_lottery_applications` | Read provider-confirmed NYC Housing Connect application statuses. | `lottery:read` |
 
 Ask the renter to confirm a change before calling a write tool. Personal tools act only on the connected renter's account. Available tools depend on the client and granted scopes; `tools/list` is authoritative. Some clients may also expose a scoped checkout-link tool, described in [the authentication documentation](https://rentreboot.com/auth.md).
@@ -88,3 +88,8 @@ Tool descriptions above were checked against the public service on October 21, 2
 ## Cursor plugin
 
 This repository includes a Cursor plugin manifest at `.cursor-plugin/plugin.json`. It references the hosted RentReboot MCP configuration in `.mcp.json`; no local server process is started. Public guides and rent data work anonymously. Connect through browser OAuth for account tools, and confirm changes before approving write tools. The public plugin metadata is MIT licensed; the hosted implementation is not included.
+
+
+## Kiro Power
+
+The [`kiro-power`](./kiro-power/) folder contains the Kiro Power manifest, hosted MCP connection and usage skill. See its [setup guide](./kiro-power/README.md). [Privacy policy](https://rentreboot.com/privacy) · [Support](https://rentreboot.com).
